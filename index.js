@@ -9,7 +9,7 @@ const context = getContext();
 function handleIncomingMessage(data) {
     let mostRecentMessage = context.chat[context.chat.length - 1];
 
-    if('speechSynthesis' in window){
+    if ('speechSynthesis' in window) {
         let utterance = new SpeechSynthesisUtterance(mostRecentMessage.name + " said something");
         window.speechSynthesis.speak(utterance);
     }
