@@ -4,10 +4,10 @@ import { eventSource, event_types } from "../../../../script.js";
 
 eventSource.on(event_types.MESSAGE_RECEIVED, handleIncomingMessage);
 
-const cotext = getContext();
+const context = getContext();
 
 function handleIncomingMessage(data) {
-    let mostRecentMessage = getContext.chat[getContext.chat.length - 1];
+    let mostRecentMessage = context.chat[context.chat.length - 1];
 
     if('speechSynthesis' in window){
         let utterance = new SpeechSynthesisUtterance(mostRecentMessage.name + " said something");
