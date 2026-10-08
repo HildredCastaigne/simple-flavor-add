@@ -1,4 +1,4 @@
-# SillyTavern Extension Example
+# Simple Flavor Add
 
 *Provide a brief description of how your extension works, what problem it aims to solve.*
 
